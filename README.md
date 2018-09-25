@@ -1,5 +1,5 @@
-# fsharpening_ca
+# fsharpening-ca
 
 Source code for my fsharp [blog](http://fsharpening.ca). 
 
-[Get started with Hugo](https://gohugo.io/getting-started/) to make one of your own.
+[Get started with Hugo](https://gohugo.io/getting--tarted/) to make one of your own.
