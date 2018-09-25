@@ -1,0 +1,23 @@
+baseURL = "http://fsharpening.ca/"
+languageCode = "en-us"
+title = "F#-ening"
+theme = "vienna" 
+copyright = "<a href=\"http://fsharpening.ca\">fsharpening.ca</a>"
+publishDir = "docs"
+disqusShortname = "fsharpening-ca"
+
+[params]
+  bgcolor = "#9b59b6"
+  subtitle = "...learning as I write this..."
+  author = "Mafinar Khan"
+  powr_id = "32da0162_1537841769"
+  ga_api_key = "UA-112774615-1"
+  themecolor = "#9b59b6"
+  twitter = "mafinar"
+  reddit = "code-shoily"
+  linkedin = "mafinar-khan"
+  github = "code-shoily"
+
+[taxonomies]
+  pages = "pages"
+  tag = "tags"

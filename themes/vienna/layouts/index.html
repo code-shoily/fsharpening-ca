@@ -1,0 +1,11 @@
+{{ partial "header.html" . }}
+
+<div class="article-list">
+  {{ range where .Paginator.Pages "Section" "posts" }}
+  {{ .Render "li" }}
+  <hr />
+  {{ end }}
+</div>
+{{ partial "pagination.html" .Paginator }}
+{{ partial "footer.html" . }}
+
