@@ -3,19 +3,30 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://fsharpening.ca/posts/unboxing/</loc>
+    <lastmod>2018-09-30T09:44:43-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://fsharpening.ca/posts/first-post/</loc>
     <lastmod>2018-09-29T23:16:34-04:00</lastmod>
   </url>
   
   <url>
     <loc>http://fsharpening.ca/</loc>
-    <lastmod>2018-09-29T23:16:34-04:00</lastmod>
+    <lastmod>2018-09-30T09:44:43-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://fsharpening.ca/tags/installation/</loc>
+    <lastmod>2018-09-30T09:44:43-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://fsharpening.ca/tags/introduction/</loc>
-    <lastmod>2018-09-29T23:16:34-04:00</lastmod>
+    <lastmod>2018-09-30T09:44:43-04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -32,13 +43,19 @@
   
   <url>
     <loc>http://fsharpening.ca/posts/</loc>
-    <lastmod>2018-09-29T23:16:34-04:00</lastmod>
+    <lastmod>2018-09-30T09:44:43-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://fsharpening.ca/tags/</loc>
-    <lastmod>2018-09-29T23:16:34-04:00</lastmod>
+    <lastmod>2018-09-30T09:44:43-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://fsharpening.ca/tags/tools/</loc>
+    <lastmod>2018-09-30T09:44:43-04:00</lastmod>
     <priority>0</priority>
   </url>
   

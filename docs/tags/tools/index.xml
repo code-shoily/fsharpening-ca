@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>F#-ening</title>
-    <link>http://fsharpening.ca/</link>
-    <description>Recent content on F#-ening</description>
+    <title>Tools on F#-ening</title>
+    <link>http://fsharpening.ca/tags/tools/</link>
+    <description>Recent content in Tools on F#-ening</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;http://fsharpening.ca&#34;&gt;fsharpening.ca&lt;/a&gt;</copyright>
     <lastBuildDate>Sun, 30 Sep 2018 09:44:43 -0400</lastBuildDate>
     
-	<atom:link href="http://fsharpening.ca/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://fsharpening.ca/tags/tools/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -19,16 +19,6 @@
       
       <guid>http://fsharpening.ca/posts/unboxing/</guid>
       <description>Naive Observations Unlike most other languages I learned, there wasn&amp;rsquo;t many surprises for me with F#. This was mostly because I was eased into the languages through Scott&amp;rsquo;s book. I didn&amp;rsquo;t intend to learn it while reading it, but still had to comprehend what the codes were trying to tell me. While the book&amp;rsquo;s wisdom is easily transferrable to other languages, it&amp;rsquo;s the beauty of the syntax which led me to explore the language further.</description>
-    </item>
-    
-    <item>
-      <title>F#rst Post</title>
-      <link>http://fsharpening.ca/posts/first-post/</link>
-      <pubDate>Sat, 29 Sep 2018 23:16:34 -0400</pubDate>
-      
-      <guid>http://fsharpening.ca/posts/first-post/</guid>
-      <description>This article made me learn my second language when I hadn&amp;rsquo;t even gained confidence in my first. And I ended up trying to use the new one more- slowing down both for awhile and affecting my CSC135 grade. By the time I touched my third, I ended up gaining more confidence on the first two; the fourth one had me cross pollinating patterns and practices.
-Languages that taught me newer ways to think, sported interesting &amp;ldquo;super powers&amp;rdquo;, and/or were just plain fun kept being used/enjoyed/talked about; others didn&amp;rsquo;t go beyond syntaxes.</description>
     </item>
     
   </channel>

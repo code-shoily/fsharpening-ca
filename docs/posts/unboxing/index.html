@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head prefix="og: http://ogp.me/ns#">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+  <meta property="og:title" content=" Unboxing and Exploration &middot;  F#-ening" />
+  
+  <meta name="theme-color" content="#9b59b6" />
+ 
+  <meta property="og:site_name" content="F#-ening" />
+  <meta property="og:url" content="http://fsharpening.ca/posts/unboxing/" />
+  
+  
+  
+  <meta property="og:type" content="article" />
+  
+  <meta property="og:article:published_time" content="2018-09-30T09:44:43-04:00" />
+  
+  <meta property="og:article:tag" content="introduction" />
+  
+  <meta property="og:article:tag" content="installation" />
+  
+  <meta property="og:article:tag" content="tools" />
+  
+  
+  <meta property="og:description" content="My experience with the installation and first bout of exploratory F# coding, along with it some links and references I might end up following" />
+
+  <title>
+     Unboxing and Exploration &middot;  F#-ening
+  </title>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <link rel="stylesheet" href="http://fsharpening.ca/css/main.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+  <link rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atelier-dune-light.min.css">
+  
+
+  <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/tonsky/FiraCode/1.205/distr/fira_code.css">
+  
+  <link rel="apple-touch-icon" href="http://fsharpening.ca/images/apple-touch-icon.png" />
+  
+</head>
+<body>
+    
+    <header class="global-header"  style="background:#9b59b6">
+    
+    <section class="header-text">
+      <h1><a href="http://fsharpening.ca/">F#-ening</a></h1>
+      
+      <div class="tag-line">
+        ...learning as I write this...
+      </div>
+      
+      
+    </section>
+  </header>
+  <main class="container">
+
+
+<article>
+  <header class="hidden-xs" style="margin-bottom: 20px">
+    <h1 class="text-primary">Unboxing and Exploration</h1>
+    <div class="post-meta clearfix">
+    
+      <div class="post-date">
+        <time datetime="2018-09-30T09:44:43-04:00">
+          Sep 30, 2018
+        </time>
+      </div>
+    
+    </div>
+  </header>
+  <header class="visible-xs-block">
+    <div class="text-center">
+      <h1 class="text-primary">Unboxing and Exploration</h1>
+      <div class="post-meta clearfix">
+      
+        <div class="post-date text-center">
+          Posted on
+          <time datetime="2018-09-30T09:44:43-04:00">
+            Sep 30, 2018
+          </time>
+        </div>
+      
+        <div class="text-center" style="padding-top: 10px">
+          
+          <span class="post-tag small"><a href="http://fsharpening.ca/tags/introduction">introduction</a></span>
+          
+          <span class="post-tag small"><a href="http://fsharpening.ca/tags/installation">installation</a></span>
+          
+          <span class="post-tag small"><a href="http://fsharpening.ca/tags/tools">tools</a></span>
+          
+        </div>
+      </div>
+    </div>
+  </header>
+  <section>
+    
+
+<h2 id="naive-observations">Naive Observations</h2>
+
+<p>Unlike most other languages I learned, there wasn&rsquo;t many surprises for me with <em>F#</em>. This was mostly because I was eased into the languages through Scott&rsquo;s book. I didn&rsquo;t intend to learn it while reading it, but still had to comprehend what the codes were trying to tell me. While the book&rsquo;s wisdom is easily transferrable to other languages, it&rsquo;s the beauty of the syntax which led me to explore the language further.</p>
+
+<p>I had prior (and brief) encounter with ReasonML and that was my only ML before this. The differences <em>F#</em> seemed to sport in syntax felt pleasant to me. That was followed by blind explorations at <a href="https://repl.it">repl.it</a>. There was nothing wrong with the syntax till I&rsquo;ve <code>Console.WriteLine</code>ed something and saw the parenthesis, where <code>printfn</code> did not. That&rsquo;s where I started looking into .NET integration and the slight syntax differences were something I didn&rsquo;t like as much. But I guess that&rsquo;s why I put <strong>Naive Observations</strong> as the title here.</p>
+
+<p>Lots of F# tutorials felt like they were targeting C# programmers. Many had lots of .NET terms in it (I had to google BCL). The same thing goes for object oriented treatments. I am not saying those are bad things but I wondered how interesting the learning experience might get if I spend the first few weeks filtering out the objects and non F# things and extract the functional parts? That <em>could</em> keep some challenges at bay while inviting new ones? I guess I&rsquo;ll find out.</p>
+
+<h2 id="unboxing">Unboxing</h2>
+
+<p>Even without trying, I was expecting the installation to be painful as I&rsquo;m using Linux and am unwilling to change my OS because of just one language. I head off <a href="https://fsharp.org/use/linux/">here</a> and it started to work fine, no pain involved. The VSCode integration was perfect as expected. I later ended up installing <code>dotnet</code> as well.</p>
+
+<p>I fired up <code>fsharpi</code> and typed out <code>printfn &quot;Hello F#&quot;</code>, it worked fine.</p>
+
+<p>Then I fire up the console and  create <code>~/repos/fsharp/first</code>, then <code>echo 'printfn &quot;Hello World&quot;' &gt; Hello.fs</code>, <code>fsharpc Hello.fs</code>, <code>./Hello.fs</code>.</p>
+
+<p>Now I am equipped to explore the language in a <code>REPL</code> and also store some code and run it.</p>
+
+<h2 id="running-a-file">Running a File</h2>
+
+<p>Since I installed <code>dotnet</code>, I <em>can</em> do a <code>dotnet new console -lang F#</code> and followed by a tool of <code>dotnet build</code> and <code>dotnet run</code> etc, I can run project. The process is documented <a href="https://docs.microsoft.com/en-us/dotnet/fsharp/get-started/get-started-command-line">here</a>.</p>
+
+<p>But I don&rsquo;t know what a <code>sln</code> file is, and I really think that would be a noise in my learning experience, learning the build tool and all that. So I&rsquo;d stay within command line with common faces. In the previous section I had run a single file source code, now I would go multiple.</p>
+
+<p>So my directory is <code>~/repos/fsharp/first</code> and added two files to it- <code>Pi.fs</code> and <code>Main.fs</code>. My intention was to add an <code>pi</code> as a value in one file and print it from the other. Lots of trials and errors happened here. There&rsquo;s <code>namespace</code> and <code>module</code>. Any except the last source file needs to have those. To use a namespace you need to <code>open</code> it. So at the end, my files looked like-</p>
+
+<p><code>Pi.fs</code></p>
+
+<pre><code class="language-fsharp">module Main.Library
+
+let pi = 3.1416
+</code></pre>
+
+<p>And <code>Main.fs</code></p>
+
+<pre><code class="language-fsharp">open Main.Library
+
+printfn &quot;%s&quot; pi
+</code></pre>
+
+<p>To run it, I did a <code>fsharpc *.fs</code> followed by <code>./Program.exe</code> and it worked. However, when playing around again it didn&rsquo;t. The order of file inputs that you feed to the compiler is important and <code>*.fs</code> had changed orders based on last edits of the file. It is important that I put the &ldquo;Entry Point&rdquo; last. So <code>fsharpc Pi.fs Main.fs</code> works <em>all the time</em>. Will get more treatment of this once I get to compile complexly related files. Hopefully fun times ahead.</p>
+
+<p>As for editor, the <a href="https://spacevim.org/">SpaceVim</a> <code>fsharp layer</code> looked fine, I&rsquo;ve been running codes on it while writing this post. Except for some repl integration didn&rsquo;t seem to work. But I think I&rsquo;ll use it for now, keep things light.</p>
+
+<h2 id="repl">REPL</h2>
+
+<p>I have always been a big fan of REPLs. I&rsquo;ve been introduced to that lifestyle by Python and I felt immediately productive as I&rsquo;ve never seen anything like that before. Richer the REPL experience, more engaging the language is for me. I usually head to the interactive modes of languages way before trying to save the files. If the experience isn&rsquo;t at par and the language isn&rsquo;t a job/school requireent, I run and hide.</p>
+
+<p>For <code>F#</code> it was a bit different as I had experienced <a href="https://repl.it">repl.it</a>, the runtime was alien to me, and my purpose was to use one chunk of the system, so I had to make sure I&rsquo;d know how equipped I&rsquo;ll be. So I started out with the file and then moved on to the REPL.</p>
+
+<p>The interactive mode of <em>F#</em> is not as great as ones Python or Elixir have. At least not at first look. There&rsquo;s some code intelligence, an okayish timing tool, some silencers, readline support etc. But not multiline history editing, magic commands, in-code documentation. Not that I could know of at first try. But that&rsquo;s good enough, typed languages are more fun on the editor I guess, it allows you to put some thought and attention the paradigm deserves.</p>
+
+<p>Anyway, <code>fsharpi</code> lets me go to interactive mode and write codes there. Thus far I just tried out simpler things but surely I&rsquo;ll try to see how power users use it and write about it some day. For now, my opinion is that <em>F#</em> has an average REPL. That&rsquo;d do.</p>
+
+<h2 id="oo-and-c">OO and C</h2>
+
+<p>Yes <em>F#</em> is a multiparadigm language and no matter how functional first it is, that side of the featureset is inevitable. I will just try to delay that.</p>
+
+<p>I am not against Object Oriented Programming. That was the first paradigm I was introduced to and the only one for the next year or so. But functional half of <em>F#</em> seemed pretty full featured to me. Especially because I am not using it for my job or something and I have all the time I need.</p>
+
+<p>Whatever I said before becomes easier to accomplish by minimizing C#iness and hardcore .NET intervension. I will try to use pure F# libraries (Is that the term they use?) whenever possible, and note down the use cases where mixed paradigm looks inevitable, probably make a wrapper at least. But something tells me it will unlikely be the case.</p>
+
+<h2 id="link-list">Link List</h2>
+
+<p>So what am I using as learning aid? I have <a href="https://pragprog.com/book/swdddf/domain-modeling-made-functional">Domain Modeling gone Functional</a> already but that is not exactly about learning the language. I was browsing HumbleBundle yesterday and saw <a href="https://www.humblebundle.com/books/learn-you-some-code-books">this</a>. There&rsquo;s an <em>F#</em> book there. It&rsquo;s kindof old but I like the feelings of sequencial learning experience books offer. So bought it yesterday and looks like it&rsquo;s a nice book. No <em>F#</em> reference list can be complete without mentioning of <a href="https://fsharpforfunandprofit.com/">Scott&rsquo;s site</a> and the ~2000 pages worth wisdom that gets generated, yet it doesn&rsquo;t seem to be too intimidating or overwhelming. And then there&rsquo;s the <a href="https://docs.microsoft.com/en-us/dotnet/fsharp/">Microsoft Guide</a>. There&rsquo;s <code>/r/fsharp</code> and lots of really friendly individuals in Twitter-land.</p>
+
+<p>That&rsquo;s all reference in my arsenal and I&rsquo;m sure it will improve. No section of reference should be complete without mentioning the &ldquo;Awesome X&rdquo; and for <em>F#</em> it&rsquo;s <a href="https://github.com/fsprojects/awesome-fsharp">here</a></p>
+
+<h2 id="coming-soon">Coming Soon</h2>
+
+<p>I intend to dive deep into making functions in <em>F#</em> later today. So that&rsquo;s what I will write about, as I&rsquo;m working with them. I may have a head start during last week&rsquo;s playing around but I will replay those too.</p>
+
+  </section>
+  <section>
+      <div class="pull-right">
+          
+          <span class="tag-text"><a href="http://fsharpening.ca/tags/introduction">introduction</a></span>
+          
+          <span class="tag-text"><a href="http://fsharpening.ca/tags/installation">installation</a></span>
+          
+          <span class="tag-text"><a href="http://fsharpening.ca/tags/tools">tools</a></span>
+                  
+        </div>        
+        <div class="clearfix"></div>
+  </section>
+  <footer>
+    
+    
+    
+
+    
+    <ul class="pager">
+      
+      <li class="previous"><a href="http://fsharpening.ca/posts/first-post/"><span aria-hidden="true">&larr;</span> Older</a></li>
+      
+      
+      <li class="next disabled"><a href="#">Newer <span aria-hidden="true">&rarr;</span></a></li>
+      
+    </ul>
+    
+  </footer>
+</article>
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+      
+      
+      if (window.location.hostname == "localhost")
+                return;
+
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      var disqus_shortname = 'fsharpening-ca';
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+  </main>
+  <footer class="container global-footer hidden-xs">
+    <div class="copyright-note pull-left">
+      <a href="http://fsharpening.ca">fsharpening.ca</a>
+    </div>
+    <div class="sns-links hidden-print">
+  
+  
+  
+  <a href="https://twitter.com/mafinar" target="_blank">
+    <i class="fab fa-twitter"></i>
+  </a>
+  
+  
+  <a href="https://linkedin.com/in/mafinar-khan" target="_blank">
+    <i class="fab fa-linkedin-in"></i>
+  </a>
+  
+  
+  
+  
+  
+  
+  <a href="https://reddit.com/user/code-shoily" target="_blank">
+    <i class="fab fa-reddit-alien"></i>
+  </a>
+  
+  
+  
+  
+  <a href="https://github.com/code-shoily" target="_blank">
+    <i class="fab fa-github-alt"></i>
+  </a>
+  
+  
+
+  
+  
+  
+</div>
+
+  </footer>
+
+  <footer class="container global-footer visible-xs-block">
+      <div class="copyright-note text-center">
+        <a href="http://fsharpening.ca">fsharpening.ca</a>
+      </div>
+    </footer>
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/fsharp.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
+  
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-126404151-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+  
+  
+
+  <script src="//www.powr.io/powr.js?external-type=html"></script> 
+  
+  <div class="powr-hit-counter" id="32da0162_1537841769"></div>
+  
+</body>
+</html>
+
