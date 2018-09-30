@@ -1,7 +1,6 @@
 ---
 title: "F#rst Post"
 date: 2018-09-29T23:16:34-04:00
-draft: true
 description: "F# is an awesome language which I never learned until recently. I decided to log my day-to-day learning experience in here for quick lookups and reference. Let's plan things!"
 tags: [
     "meta",
